@@ -1,0 +1,49 @@
+index: "Ignatius"
+dataset:
+  coord_scale: 50.0
+  type: "t2"
+  path: "./Realworld_Dataset/Ignatius/"
+  factor: 2
+  patches:
+    height: 180
+    width: 180
+geoms:
+  points:
+    init_scale: [0.4, 0.4, 0.4]
+models:
+  attn:
+    embed:
+      k_L: [4, 4, 4]
+      q_L: [4]
+      v_L: [4, 4]
+      value:
+        skip_layers: [5]
+training:
+  add_num: 500
+  lr:
+    attn:
+      type: "cosine"
+      warmup: 5000
+    points:
+      base_lr: 9.0e-3
+    points_influ_scores:
+      type: "cosine"
+      warmup: 5000
+    feats: 
+      type: "cosine"
+      warmup: 5000
+    generator:
+      type: "cosine"
+      warmup: 5000
+eval:
+  dataset:
+    type: "t2"
+    path: "./Realworld_Dataset/Ignatius/"
+    factor: 2
+  img_idx: 0
+test:
+  datasets:
+    - name: "testset"
+      type: "t2"
+      path: "./Realworld_Dataset/Ignatius/"
+      factor: 2

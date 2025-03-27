@@ -1,0 +1,17 @@
+index: "drums"
+dataset:
+  path: "./Realworld_Dataset/drums/"
+models:
+  attn:
+    embed:
+      value:
+        skip_layers: [5]
+training:
+  add_stop: 45000
+eval:
+  dataset:
+    path: "./Realworld_Dataset/drums/"
+test:
+  datasets:
+    - name: "testset"
+      path: "./Realworld_Dataset/drums/"

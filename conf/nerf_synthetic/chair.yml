@@ -1,0 +1,12 @@
+index: "chair"
+dataset:
+  path: "./Realworld_Dataset/chair/"
+training:
+  add_stop: 50000
+eval:
+  dataset:
+    path: "./Realworld_Dataset/chair/"
+test:
+  datasets:
+    - name: "testset"
+      path: "./Realworld_Dataset/chair/"

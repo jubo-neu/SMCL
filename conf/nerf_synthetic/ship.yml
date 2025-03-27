@@ -1,0 +1,13 @@
+index: "ship"
+dataset:
+  path: "./Realworld_Dataset/ship/"
+training:
+  add_stop: 80000
+  add_num: 500
+eval:
+  dataset:
+    path: "./Realworld_Dataset/ship/"
+test:
+  datasets:
+    - name: "testset"
+      path: "./Realworld_Dataset/ship/"

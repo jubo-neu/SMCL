@@ -1,0 +1,28 @@
+index: "Truck"
+dataset:
+  coord_scale: 40.0
+  type: "t2"
+  path: "./Realworld_Dataset/Truck/"
+  factor: 2
+geoms:
+  points:
+    init_scale: [1.0, 1.0, 1.0]
+    constant: 4.0
+training:
+  add_start: 20000
+  add_stop: 50000
+  lr:
+    points:
+      base_lr: 8.0e-3
+eval:
+  dataset:
+    type: "t2"
+    path: "./Realworld_Dataset/Truck/"
+    factor: 2
+  img_idx: 0
+test:
+  datasets:
+    - name: "testset"
+      type: "t2"
+      path: "./Realworld_Dataset/Truck/"
+      factor: 2

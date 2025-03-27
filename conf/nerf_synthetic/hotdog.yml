@@ -1,0 +1,16 @@
+index: "hotdog"
+dataset:
+  path: "./Realworld_Dataset/hotdog/"
+geoms:
+  points:
+    select_k: 30
+training:
+  add_stop: 80000
+  add_num: 500
+eval:
+  dataset:
+    path: "./Realworld_Dataset/hotdog/"
+test:
+  datasets:
+    - name: "testset"
+      path: "./Realworld_Dataset/hotdog/"

@@ -1,0 +1,27 @@
+index: "lego"
+dataset:
+  path: "./Realworld_Dataset/lego/"
+geoms:
+  background:
+    constant: 3.0
+models:
+  attn:
+    embed:
+      key:
+        ff_act: "leakyrelu"
+      query:
+        ff_act: "leakyrelu"
+      value:
+        ff_act: "leakyrelu"
+        skip_layers: [5]
+training:
+  add_start: 20000
+  prune_thresh_list: [0.0, 0.2]
+  prune_steps_list: [40000]
+eval:
+  dataset:
+    path: "./Realworld_Dataset/lego/"
+test:
+  datasets:
+    - name: "testset"
+      path: "./Realworld_Dataset/lego/"

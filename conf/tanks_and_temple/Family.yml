@@ -1,0 +1,28 @@
+index: "Family"
+dataset:
+  coord_scale: 40.0
+  type: "t2"
+  path: "./Realworld_Dataset/Family/"
+  factor: 2
+geoms:
+  points:
+    init_scale: [0.3, 0.3, 0.3]
+models:
+  attn:
+    embed:
+      value:
+        skip_layers: [5]
+training:
+  add_num: 500
+eval:
+  dataset:
+    type: "t2"
+    path: "./Realworld_Dataset/Family/"
+    factor: 2
+  img_idx: 0
+test:
+  datasets:
+    - name: "testset"
+      type: "t2"
+      path: "./Realworld_Dataset/Family/"
+      factor: 2
