@@ -159,6 +159,9 @@ python test.py --opt conf/tanks_and_temple/your category.yml
 
 ## Citation
 If you find this repository useful in your project, please cite the following work:
+```bash
+Not available at the moment.
+```
 
 ## Contact us
 If you have any questions, please contact us [jbchen@stumail.neu.edu.cn](jbchen@stumail.neu.edu.cn).
