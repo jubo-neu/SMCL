@@ -43,9 +43,9 @@ SMCL
 
 - After making your own dataset, then execute the command:
 ```bash
-python …/train/train.py -n your category
-                        -c .../conf/Mir_180.conf
-                        -D .../Mir-180_Dataset/your category/For_Synthesis
+python .../train/train.py -n your category
+                          -c .../conf/Mir_180.conf
+                          -D .../Mir-180_Dataset/your category/For_Synthesis
 ```
 
 2. If you want to train our model on real-world datasets, you need to create a sparse point cloud and first perform point feature extraction operations. These data processing scripts also in the `tools` folder, including:
@@ -87,7 +87,7 @@ python train.py --opt conf/your category/your category.yml
 ```
 
 ## Preparation for test
-We provide the above-mentioned categories of objects mentioned in the training as test targets. To strat:
+We provide some categories as test targets. To strat:
 1. Download scene representation module checkpoints [here](https://onedrive.live.com/?id=6DE4E04ABF455D96%21s4c703031efcb49d6ba06e31fd7100a55&cid=6DE4E04ABF455D96).
 2. Download view synthesizer checkpoints [here](https://onedrive.live.com/?id=6DE4E04ABF455D96%21s6859c4a61d6449c2bebf38ac6772ae3e&cid=6DE4E04ABF455D96).
 
@@ -109,6 +109,49 @@ SMCL
     |-- ...
 ```
 
-3. We provide mini [Mir-180_Dataset](https://onedrive.live.com/?cid=6DE4E04ABF455D96&id=6DE4E04ABF455D96%21sbc6b662b9ae6481a92e9c720b29c8f3e&parId=root&o=OneUp), [Real-world_Dataset](https://onedrive.live.com/?cid=6DE4E04ABF455D96&id=6DE4E04ABF455D96%21s0b74b63888fb44189fdf0fbd1cb0c4ca&parId=root&o=OneUp) and [point cloud](https://onedrive.live.com/?id=6DE4E04ABF455D96%21s8cbb5ec9cd734e9783be74932e017cf8&cid=6DE4E04ABF455D96) as examples.
+3. We provide these mini [Mir-180_Dataset](https://onedrive.live.com/?cid=6DE4E04ABF455D96&id=6DE4E04ABF455D96%21sbc6b662b9ae6481a92e9c720b29c8f3e&parId=root&o=OneUp), [Real-world_Dataset](https://onedrive.live.com/?cid=6DE4E04ABF455D96&id=6DE4E04ABF455D96%21s0b74b63888fb44189fdf0fbd1cb0c4ca&parId=root&o=OneUp) and [point cloud](https://onedrive.live.com/?id=6DE4E04ABF455D96%21s8cbb5ec9cd734e9783be74932e017cf8&cid=6DE4E04ABF455D96) as examples.
+
+- Make sure you have the following files:
+```bash
+SMCL
+|-- Mir-180_Dataset
+    |-- display
+    |-- ...
+|-- Real-world_Dataset
+    |-- Caterpillar
+    |-- hotdog
+    |-- ...
+|-- point_cloud
+    |-- caterpillar 10000.pcd
+    |-- hotdog 10000.pcd
+    |-- ...
+```
 
 ## Test
+1. If you want to test the NVS performance of our complete model on synthetic datasets, please execute the command:
+```bash
+python .../eval.py -D .../Mir-180_Dataset/your category/For_Synthesis
+                   -n your category
+                   -L .../viewlist/your category.txt
+                   --multicat
+                   -O eval_out/your category
+```
+- This will allow you to use the provided checkpoint to render visualization results and obtain PSNR and SSIM. 
+
+```bash
+python .../calc_metrics.py -D .../Mir-180_Dataset/your category/For_Synthesis
+                           --multicat
+                           -O .../eval_out/your category
+```
+- This will give you the final three metrics.
+
+2. If you want to test the NVS performance of our complete model on real-world datasets, please execute the command:
+```bash
+python test.py --opt conf/tanks_and_temple/your category.yml
+```
+
+## Citation
+If you find this repository useful in your project, please cite the following work:
+
+## Contact us
+If you have any questions, please contact us [jbchen@stumail.neu.edu.cn](jbchen@stumail.neu.edu.cn).
