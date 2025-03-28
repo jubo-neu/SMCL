@@ -1,7 +1,14 @@
 # SMCL
-These are the official code and dataset releases for the paper "A Spatial-spectral Multi-view Contrastive Learning Framework for Scene Representation Learning", intended to assist with peer review.
+## [Paper] A Spatial-spectral Multi-view Contrastive Learning Framework for Scene Representation Learning
+These are the official code and dataset releases, intended to assist with peer review.
 
 ![Teaser](https://github.com/jubo-neu/SMCL/blob/main/teaser.png)
+
+## Highlights
+- Combines FFT with contrastive learning to enhance spectral feature extraction capabilities.
+- R-MSA mechanism improves feature updating and 3D space information processing.
+- Complex scene representation by integrating spatial and spectral domain features.
+- Enhances application scope by integrating point clouds and images into a unified framework.
 
 ## TODO
 - [x] Training code and training datasets.
