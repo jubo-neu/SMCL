@@ -4,6 +4,8 @@ These are the official code and dataset releases, intended to assist with peer r
 
 ![Teaser](https://github.com/jubo-neu/SMCL/blob/main/teaser.png)
 ## Results
+- Partial visualizations:
+
 <img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/bench.gif"> </a>
 <img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/car.gif"> </a>
 <img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/display.gif"> </a> 
@@ -11,7 +13,12 @@ These are the official code and dataset releases, intended to assist with peer r
 <img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/sofa.gif"> </a> 
 
 <img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/nerfsync_chair.gif"> </a> 
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/nerfsync_drums.gif"> </a> 
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/nerfsync_hotdog.gif"> </a> 
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/nerfsync_lego.gif"> </a> 
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/nerfsync_ship.gif"> </a> 
 
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/tt_Truck.gif"> </a> 
 <img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/tt_caterpillar.gif"> </a> 
 <img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/tt_family.gif"> </a> 
 
