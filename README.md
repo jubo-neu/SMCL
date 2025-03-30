@@ -157,6 +157,13 @@ python .../calc_metrics.py -D .../Mir-180_Dataset/your category/For_Synthesis
 python test.py --opt conf/tanks_and_temple/your category.yml
 ```
 
+## Results
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/bench.gif"> </a>
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/car.gif"> </a>
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/display.gif"> </a> 
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/plane.gif"> </a> 
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/sofa.gif"> </a> 
+
 ## Citation
 If you find this repository useful in your project, please cite the following work:
 ```bash
