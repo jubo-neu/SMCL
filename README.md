@@ -3,6 +3,17 @@
 These are the official code and dataset releases, intended to assist with peer review.
 
 ![Teaser](https://github.com/jubo-neu/SMCL/blob/main/teaser.png)
+## Results
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/bench.gif"> </a>
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/car.gif"> </a>
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/display.gif"> </a> 
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/plane.gif"> </a> 
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/sofa.gif"> </a> 
+
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/nerfsync_chair.gif"> </a> 
+
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/tt_caterpillar.gif"> </a> 
+<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/tt_family.gif"> </a> 
 
 ## Highlights
 - Combines FFT with contrastive learning to enhance spectral feature extraction capabilities.
@@ -156,13 +167,6 @@ python .../calc_metrics.py -D .../Mir-180_Dataset/your category/For_Synthesis
 ```bash
 python test.py --opt conf/tanks_and_temple/your category.yml
 ```
-
-## Results
-<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/bench.gif"> </a>
-<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/car.gif"> </a>
-<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/display.gif"> </a> 
-<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/plane.gif"> </a> 
-<img height="100" src="https://github.com/jubo-neu/SMCL/blob/main/gif/sofa.gif"> </a> 
 
 ## Citation
 If you find this repository useful in your project, please cite the following work:
