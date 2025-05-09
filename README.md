@@ -34,6 +34,7 @@ These are the official code and dataset releases, intended to assist with peer r
 - [x] Scripts, tools and configuration files.
 
 ### News
+- 2025-5-9: Preprint is available on Elsevier's SSRN eLibrary.
 - 2025-3-30: All files have been released.
 
 ## Preparation for training
@@ -112,7 +113,7 @@ python train.py --opt conf/your category/your category.yml
 ```
 
 ## Preparation for test
-We provide some categories as test targets. To strat:
+We provide some categories as test targets. To start:
 1. Download scene representation module checkpoints [here](https://onedrive.live.com/?id=6DE4E04ABF455D96%21s4c703031efcb49d6ba06e31fd7100a55&cid=6DE4E04ABF455D96).
 2. Download view synthesizer checkpoints [here](https://onedrive.live.com/?id=6DE4E04ABF455D96%21s6859c4a61d6449c2bebf38ac6772ae3e&cid=6DE4E04ABF455D96).
 
@@ -178,7 +179,9 @@ python test.py --opt conf/tanks_and_temple/your category.yml
 ## Citation
 If you find this repository useful in your project, please cite the following work:
 ```bash
-Not available at the moment.
+# Preprint on Elsevier's SSRN eLibrary
+Chen, Jubo and Yu, Xiaosheng and Jiang, Zhengxuan and Teng, Zi and Wu, Hao and Wu, Chengdong, A Spatial-spectral Multi-view Contrastive Learning Framework for Scene Representation Learning (March 30, 2025).
+Available at SSRN: https://ssrn.com/abstract=5246448 or http://dx.doi.org/10.2139/ssrn.5246448
 ```
 
 ## Contact us
