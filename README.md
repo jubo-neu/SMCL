@@ -2,7 +2,8 @@
 ## [Paper] A Spatial-spectral Multi-view Contrastive Learning Framework for Scene Representation Learning
 These are the official code and dataset releases, intended to assist with peer review.
 
-![Teaser](https://github.com/jubo-neu/SMCL/blob/main/teaser.png)
+<img src="https://github.com/jubo-neu/SMCL/blob/main/new%20teaser.png?raw=true" alt="Teaser Image">
+
 ## Results
 - Partial visualizations:
 
