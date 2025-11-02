@@ -1,7 +1,7 @@
 # SMCL
 ## [Paper] A Spatial-spectral Multi-view Contrastive Learning Framework for Scene Representation Learning
 These are the official code releases.
-
+- Graphical Abstract:
 <img src="https://github.com/jubo-neu/SMCL/blob/main/new%20teaser.png?raw=true" alt="Teaser Image">
 
 ## Results
@@ -61,7 +61,7 @@ SMCL
         |-- test
         |-- train
         |-- val
-    |-- ...
+    |-- other category
         |-- For_Synthesis
         |-- test
         |-- train
@@ -81,10 +81,6 @@ python .../train/train.py -n your category
 - Ensuring that you have the following files:
 ```bash
 SMCL
-|-- point_cloud
-    |-- caterpillar 10000.pcd
-    |-- hotdog 10000.pcd
-    |-- ...
 |-- Real-world_Dataset
     |-- Caterpillar
         |-- pose
@@ -117,33 +113,17 @@ We provide some categories as test targets. To start:
 ```bash
 SMCL
 |-- cnn_ffc_weights
-    |-- cnn_ffc_display_0.05.pt
+    |-- encoder_display.pt
     |-- encoder_caterpillar.pth
     |-- encoder_hotdog.pth
     |-- ...
 |-- checkpoints
     |-- Caterpillar
-        |-- model_250000.pth
+        |-- model.pth
     |-- display_exp
-        |-- SMCL_latest
+        |-- model.pth
     |-- hotdog
-        |-- model_250000.pth
-    |-- ...
-```
-
-3. Make sure you have the following data files:
-```bash
-SMCL
-|-- Mir-180_Dataset
-    |-- display
-    |-- ...
-|-- Real-world_Dataset
-    |-- Caterpillar
-    |-- hotdog
-    |-- ...
-|-- point_cloud
-    |-- caterpillar 10000.pcd
-    |-- hotdog 10000.pcd
+        |-- model.pth
     |-- ...
 ```
 
@@ -173,9 +153,8 @@ python test.py --opt conf/tanks_and_temple/your category.yml
 ## Citation
 If you find this repository useful in your project, please cite the following work:
 ```bash
-# Preprint on Elsevier's SSRN eLibrary
-Chen, Jubo and Yu, Xiaosheng and Jiang, Zhengxuan and Teng, Zi and Wu, Hao and Wu, Chengdong, A Spatial-spectral Multi-view Contrastive Learning Framework for Scene Representation Learning (March 30, 2025).
-Available at SSRN: https://ssrn.com/abstract=5246448 or http://dx.doi.org/10.2139/ssrn.5246448
+# Avaliable online
+https://doi.org/10.1016/j.inffus.2025.103889
 ```
 
 ## Contact us
