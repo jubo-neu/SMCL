@@ -153,8 +153,15 @@ python test.py --opt conf/tanks_and_temple/your category.yml
 ## Citation
 If you find this repository useful in your project, please cite the following work:
 ```bash
-# Avaliable online
-https://doi.org/10.1016/j.inffus.2025.103889
+@article{chen2026spatial,
+  title={A spatial-spectral multi-view contrastive learning framework for scene representation learning},
+  author={Chen, Jubo and Yu, Xiaosheng and Jiang, Zhengxuan and Teng, Zi and Wu, Hao and Wu, Chengdong},
+  journal={Information Fusion},
+  volume={127},
+  pages={103889},
+  year={2026},
+  publisher={Elsevier}
+}
 ```
 
 ## Contact us
